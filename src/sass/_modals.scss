@@ -1,0 +1,38 @@
+.modal-dialog-centered {
+	min-height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: auto;
+	@media(max-width: 768px) {
+		min-height: calc(100vh - 20px);
+	}
+}
+
+.modal-content{
+	border-radius: 0;
+	border: 0;
+	position: relative;
+	.close{
+		position: absolute;
+		content: '';
+		right: 0px;
+		top: 0px;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		@media screen and (min-width: 992px){
+			display: none;
+		}
+	}
+}
+
+.team-modal{
+    .team-members{
+        width: 100%;
+    }
+}

@@ -1,0 +1,348 @@
+@import "_fonts.scss";
+
+body, html{
+	padding: 0;
+	font-family: 'Gilroy';
+	margin: 0;
+    min-width: 320px;
+}
+
+p, h1, h2, h3, span{
+	cursor: default;
+}
+
+a{
+	cursor: pointer;
+	color: #fff;
+	&:hover{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.bold{
+    font-family: 'Gilroy Bold';
+}
+
+button{
+	cursor: pointer;
+	&:focus{
+		outline: none;
+	}
+    & > span {
+        cursor: pointer !important;
+    }
+}
+
+.btn{
+	&:focus{
+		box-shadow: none!important;
+	}
+}
+
+.header{
+	padding: 10px 0;
+	&-logo{
+		margin-right: 150px;
+		font-family: 'Gilroy';
+		font-size: 34px;
+		line-height: 1.2;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			right: -20px;
+			top: 0;
+			width: 13px;
+			height: 13px;
+			background-image: url(../img/symbol.svg);
+		}
+	}
+	&-link{
+		padding: 10px 20px;
+		position: relative;
+		&::after{
+			content: '';
+			border: 1px solid  #fff;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			transition: opacity .125s;
+		}
+		&:hover{
+			&::after{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.caption{
+	color: #000;
+	font-size: 42px;
+	font-family: 'Gilroy Bold';
+	margin-bottom: 70px;
+}
+.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-button{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	padding-left: 30px !important;
+	color: #fff;
+	border: 1px solid rgba(255,255,255,.31);
+	background-color: transparent;
+	&_text{
+        cursor: pointer;
+		margin-left: 10px;
+		font-size: 16px;
+	}
+}
+
+.header-button-row{
+	display: flex;
+	align-items: center;
+}
+
+.header-button{
+	margin-right: 25px;
+	&.shadow-hover{
+        transition: box-shadow .25s, transform .125s;
+		&:hover{
+			box-shadow: 0 6px 12px rgba(0,0,0,.29);
+            transform: translateY(-2px);
+		}
+	}
+    &.bg-hover{
+        transition: background-color .125s, color .125s;
+        &:hover{
+            background-color: #fff;
+            color: #5253FB;
+        }
+    }
+	&.gradient{
+		background-color: #5253FB;
+		background-image: linear-gradient(to right top, #5253FB 0%, #7745FF 100%);
+		color: #fff;
+		box-shadow: 0 5px 30px rgba(91, 80, 252, .58) !important;
+	}
+	&.fill{
+		color: #4A4BE3;
+		background-color: #fff;
+	}
+	&.circled{
+		padding: 10px 0;
+		padding-left: 35px;
+		padding-right: 35px;
+		border-radius: 27px;
+		border: 1px solid rgba(255,255,255,.31);		
+	}
+	&.no-shadow{
+		transition: color .25s;
+		&:hover{
+			box-shadow: none;
+			color: #d3d3d3;
+		}
+	}
+	&.transparent{
+		background-color: transparent;
+		color: #fff;
+	}
+	&.shadow{
+		box-shadow: 0 5px 20px rgba(255,255,255,.2);
+	}
+}
+
+// .hovered{
+// 	&.scale{
+// 		transition: transform .25s;
+// 		&:hover{
+// 			transform: scale(1.05);
+// 		}
+// 	}
+// }
+
+.figure-button{
+    padding: 5px 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >.person{
+        background-image: url(../img/person-white.svg);
+    }
+}
+
+.person{
+	height: 20px;
+	width: 15px;
+	background-image: url(../img/person.svg);
+	background-size: cover;
+	display: inline-block;
+}
+
+.lang-button{
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+
+.lang-dropdown{
+	left: 0;
+	transform: translateX(-25%);
+	min-width: 100px;
+	box-shadow: 0 2px 7px rgba(0,0,0,.19);
+}
+
+.fixed-button-container{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: 35px;
+	right: 50px;
+	animation-duration: .25s;
+	z-index: 1000;
+}
+
+.hidden{
+	opacity: 0 !important;
+}
+.shown{
+	opacity: 1 !important;
+}
+
+.putDown{
+	transform: translateY(100vh);
+}
+
+.fixed-button{
+	text-align: center;
+	display: block;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 10px 16px rgba(0,0,0,.06);
+	background-color: #fff;
+	border: 0;
+	padding: 0;
+	transition: box-shadow .25s;
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+	svg{
+		width: 45px !important;
+		height: 100%;
+		padding-top: 12px;
+		padding-bottom: 16px;
+		color: #E5E5E5;
+		transition: color .25s;
+	}
+	&.telegram-button{
+		position: relative;
+		svg{
+			width: 33px !important;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-55%);
+			padding-bottom: 12px;
+		}
+	}
+	&:hover{
+		box-shadow: 0 10px 16px rgba(0,0,0,.19);
+		svg{
+			color: darken(#e5e5e5, 10%);
+		}
+	}
+}
+
+.navbar-toggler{
+	border: 0;
+	z-index: 10;
+	&_img{
+		z-index: 1000;
+		width: 16px;
+		height: 16px;
+		.a{
+			fill: #fff;
+		}
+	}
+	&[aria-expanded='true']{
+		.navbar-toggler_img{
+			.a{
+				fill: #5253FB;
+			}
+		}
+	}
+}
+
+.arrow{
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(82, 83, 251, .15);
+    cursor: pointer;
+    border: 0;
+    // background: none;
+    transition: box-shadow .125s;
+    &:hover{
+        box-shadow: 0 3px 20px rgba(82, 83, 251, .35);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/media/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 50%;
+        left: 50%;
+        width: 11px;
+        height: 22px;
+    }
+    &.arrow-left{
+        left: 0;
+        &::after{
+            transform: translate(-60%, -50%);
+        }
+    }
+    &.arrow-right{
+        right: 0;
+        &::after{
+            transform: translate(-40%, -50%) rotate(180deg);
+
+        }
+    }
+    &.slick-disabled{
+        opacity: .5;
+    }
+}
+
+@import "sections/topper.scss";
+@import "sections/video.scss";
+@import "sections/follow.scss";
+@import "sections/about.scss";
+@import "sections/min.scss";
+@import "sections/team.scss";
+@import "sections/partners.scss";
+@import "sections/media.scss";
+@import "sections/bottom.scss";
+@import "sections/structure.scss";
+@import "sections/roadmap.scss";
+@import "sections/economy.scss";
+
+@import "mobile/small.scss";
+
+@import "modals.scss";

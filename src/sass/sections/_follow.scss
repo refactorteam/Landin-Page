@@ -1,0 +1,22 @@
+.follow{
+    height: 82px;
+	.navbar{
+	    height: 82px;
+		background-color: #5253FB;
+		background-image: linear-gradient(to right, #5253FB 0%, #7745FF 100%);
+        &-brand{
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-image: url(../img/symbol.svg);
+            margin-right: 120px;
+        }
+        &-nav{
+            .nav-link{
+                padding-left: 20px;
+                padding-right: 20px;
+                color: #fff;
+            }
+        }
+	}
+}

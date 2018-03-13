@@ -1,0 +1,156 @@
+.roadmap {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #F7F9FF; }
+  .roadmap .caption {
+    margin-bottom: 85px; }
+  .roadmap-top {
+    position: relative; }
+  .roadmap .arrow {
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    top: 75px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0 3px 6px rgba(82, 83, 251, 0.15);
+    box-shadow: 0 3px 6px rgba(82, 83, 251, 0.15);
+    cursor: pointer;
+    border: 0;
+    -webkit-transition: opacity .25s, -webkit-box-shadow .125s;
+    transition: opacity .25s, -webkit-box-shadow .125s;
+    transition: box-shadow .125s, opacity .25s;
+    transition: box-shadow .125s, opacity .25s, -webkit-box-shadow .125s; }
+    .roadmap .arrow:hover {
+      -webkit-box-shadow: 0 3px 20px rgba(82, 83, 251, 0.35);
+      box-shadow: 0 3px 20px rgba(82, 83, 251, 0.35); }
+    .roadmap .arrow::after {
+      content: '';
+      position: absolute;
+      background-image: url(../img/media/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 50%;
+      left: 50%;
+      width: 11px;
+      height: 22px; }
+    .roadmap .arrow.arrow-left {
+      left: 0; }
+      .roadmap .arrow.arrow-left::after {
+        -webkit-transform: translate(-60%, -50%);
+        transform: translate(-60%, -50%); }
+    .roadmap .arrow.arrow-right {
+      right: 0; }
+      .roadmap .arrow.arrow-right::after {
+        -webkit-transform: translate(-40%, -50%) rotate(180deg);
+        transform: translate(-40%, -50%) rotate(180deg); }
+    .roadmap .arrow.slick-disabled {
+      opacity: .5; }
+  .roadmap-top {
+    padding: 0 60px; }
+  .roadmap-card {
+    padding: 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    cursor: default; }
+    .roadmap-card:focus {
+      outline: none; }
+    .roadmap-card_img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 50px;
+      background-position: center center;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -webkit-transition: -webkit-box-shadow .25s;
+      transition: -webkit-box-shadow .25s;
+      transition: box-shadow .25s;
+      transition: box-shadow .25s, -webkit-box-shadow .25s; }
+    .roadmap-card_desc {
+      line-height: 19px;
+      cursor: inherit; }
+    .roadmap-card:hover .roadmap-card_img {
+      -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.29);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.29); }
+  .roadmap-bottom {
+    margin-top: 100px; }
+    .roadmap-bottom-wrapper {
+      padding: 0 60px;
+      margin: 0 auto;
+      overflow-x: visible; }
+    .roadmap-bottom-thing {
+      margin: 0 40px;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .roadmap-bottom-thing.before .roadmap-bottom-dot::before {
+        content: '';
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 1000px;
+        height: 8px;
+        background-color: #4A4BE3;
+        z-index: -1;
+        background-image: none; }
+      .roadmap-bottom-thing.future .roadmap-bottom-dot::before {
+        content: '';
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 255px;
+        z-index: -1;
+        height: 2px;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #4A4BE3), color-stop(0%, rgba(255, 255, 255, 0)));
+        background-image: linear-gradient(to right, #4A4BE3 50%, rgba(255, 255, 255, 0) 0%);
+        background-position: center;
+        background-size: 12px 2px; }
+      .roadmap-bottom-thing:last-child .roadmap-bottom-dot::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #4A4BE3), color-stop(0%, rgba(255, 255, 255, 0)));
+        background-image: linear-gradient(to right, #4A4BE3 50%, rgba(255, 255, 255, 0) 0%);
+        background-position: center;
+        background-size: 12px 2px;
+        width: 1000px;
+        height: 2px;
+        z-index: -1; }
+    .roadmap-bottom-desc {
+      font-family: 'Gilroy Bold'; }
+    .roadmap-bottom-dot {
+      border-radius: 50%;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background-image: -webkit-gradient(linear, left bottom, right top, from(#5253FB), to(#7745FF));
+      background-image: linear-gradient(to right top, #5253FB 0%, #7745FF 100%);
+      text-align: center;
+      margin-bottom: 30px; }
