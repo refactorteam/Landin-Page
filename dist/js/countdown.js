@@ -1,1 +1,1 @@
-$(document).ready(function(){var t,n;t="2018/03/31",n=$(".topper-clock"),$(n).countdown(t,function(t){var n=t.strftime("%D:%H:%M");$(this).text(n)})});
+$(document).ready(function(){var t,o,n;n=moment("2018-03-31 00:00 +3:00").toDate(),t=n,o=$(".topper-clock"),$(o).countdown(t,function(t){var o=t.strftime("%D:%H:%M");$(this).text(o)})});

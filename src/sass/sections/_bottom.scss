@@ -13,6 +13,14 @@
 		background-size: cover;
 		z-index: -1;
 	}
+	&-particles{
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 300px;
+		right: 0;
+		z-index: -1;
+	}
 	.time{
 		position: relative;
 		&::before{

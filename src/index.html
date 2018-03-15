@@ -18,7 +18,6 @@
 
 <body>
     <div class="fixed-button-container d-none animated" id="fixedButtons">
-        <a href="#top" class="fixed-button" id="scrollTop"><i class="fas fa-chevron-up"></i></a>
         <a href="https://t.me/refactor_rus" class="fixed-button telegram-button" id="tg-link">
             <i class="fab fa-telegram-plane"></i>
             <!-- <i class="fas fa-chevron-up"></i> -->
@@ -27,8 +26,10 @@
             <i class="fab fa-medium-m"></i>
             <!-- <i class="fas fa-chevron-up"></i> -->
         </a>
+        <a href="#top" class="fixed-button" id="scrollTop"><i class="fas fa-chevron-up"></i></a>
     </div>
     <section class="topper" id="top">
+        <div class="particle-background d-md-none d-lg-block" id="particleBackground"></div>
         <div class="container">
             <div class="menu-m outer-menu">
                 <nav class="header navbar navbar-expand-lg navbar-dark">
@@ -124,13 +125,13 @@
                             <a class="header-link" href="#idea">Idea</a>
                         </li>
                         <li class="nav-item">
+                            <a class="header-link" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="header-link" href="#roadmap">Roadmap</a>
                         </li>
                         <li class="nav-item">
                             <a class="header-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-link" href="#economy">Product</a>
                         </li>
                     </ul>
                     <div class="header-button-row my-2 my-lg-0">
@@ -162,7 +163,7 @@
                 <div class="topper-content-right">
                     <p class="start">Token Sale starts in:</p>
                     <h1 class="topper-clock">20:18:21</h1>
-                    <a href="" class="header-button circled shadow shadow-hover hovered scale fill">Buy tokens</a>
+                    <a href="" id="pulsatingButton" class="header-button circled shadow shadow-hover hovered scale fill">Buy tokens</a>
                     <p class="exept">Exepting BTC, ETH, LTC</p>
                 </div>
                 <ul class="social-list d-flex">
@@ -198,17 +199,17 @@
                             <a class="nav-link" href="#idea">Idea</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#roadmap">Roadmap</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#team">Team</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#economy">Product</a>
-                        </li>
                     </ul>
                     <div class="header-button-row my-2 my-lg-0">
-                        <a href="" class="header-button fill circled shadow-hover bold">Buy tokens</a>
+                        <a href="" class="header-button fill circled shadow-hover bold" id="pulseBottomButton">Buy tokens</a>
                         <a href="" class="figure-button"><i class="person"></i></a>
                         <div class="dropdown">
                             <button class="btn lang-button dropdown-toggle" type="button" id="langFloatButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">En</button>
@@ -222,7 +223,7 @@
             </div>
         </nav>
     </section>
-    <section class="about" id="idea">
+    <section class="about">
         <div class="container">
             <article class="receivable about-article">
                 <h2 class="caption center">What a trade receivable is</h2>
@@ -295,7 +296,7 @@
                 <p class="about-article_text center">Trade receivable is based on delay on payment. Usually suppliers ship their goods on terms that customer can settle the account within a period of days. During this period there is an existing debt to the supplier that is noted in balance
                     sheet of a supplier as trade receivable.</p>
             </article>
-            <article class="idea about-article">
+            <article class="idea about-article" id="idea">
                 <h2 class="caption center">Core idea</h2>
                 <div class="idea-show show d-flex center" id="complex2">
                     <div class="idea-show-card debt">
@@ -361,7 +362,7 @@
             </article>
         </div>
     </section>
-    <section class="structure">
+    <section class="structure" id="product">
         <div class="container">
             <h2 class="caption center">Product structure and content</h2>
             <div class="structure-wrapper">
@@ -424,9 +425,7 @@
                 <div class="structure-right structure-side">
                     <ul class="structure-right_top structure-list" id="strDesc3">
                         <li class="structure-list_item">
-                            <p class="structure-list_item__text">Institutional investors
-                                <br>and Ultra High Worth
-                                <br>Individuals</p>
+                            <p class="structure-list_item__text">Institutional investors and Rich Private Investors</p>
                             <div class="structure-list_item__pointer"></div>
                         </li>
                         <li class="structure-list_item">
@@ -570,7 +569,6 @@
                             <li class="min-desc min-list-item">Cost cut for stakeholders’ businesses</li>
                             <li class="min-desc min-list-item">Risk control</li>
                         </ul>
-                        <button class="header-button circled gradient ">Buy tokens</button>
                     </div>
                 </div>
             </div>
@@ -609,61 +607,61 @@
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/5.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">Business-model stress-testing, technical concept design</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/6.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">Whitepaper ICO, MVP design</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/7.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">Pre-ICO</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/8.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">MVP announcement, issuance of licence to COMFIN</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/9.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">ICO, REFT listing on exchanges</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/10.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">Post-ICO arbitrage, RTP alpha-testing, REFT listing on exchanges</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/11.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">Development of business infrastructure in target countries, CrowdFactor testing</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/12.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">STRAM testing</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/13.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">re:factor platform complete launch</span>
                         </div>
                         <div class="roadmap-card d-flex">
                             <div class="roadmap-card_img">
-                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/1.svg); width: 72px; height: 72px;"></div>
+                                <div class="roadmap-card_img__symbol" style="background-image: url(img/road/14.svg); width: 72px; height: 72px;"></div>
                             </div>
                             <span class="roadmap-card_desc">ADAM AI implementation</span>
                         </div>
@@ -918,7 +916,7 @@
                     <div class="economy-description">
                         <div class="economy-left">
                             <div class="economy-thing">
-                                <h2 class="economy-number">715<span class="economy-b">mln</span></h2>
+                                <h2 class="economy-number">720<span class="economy-b">mln</span></h2>
                                 <p class="economy-desc">Max volume of REFT
                                     <br>Tokens sold out during ICO</p>
                                 <div class="economy-round" style="opacity: 1;"></div>
@@ -1111,6 +1109,8 @@
         </div>
     </section>
     <section class="bottom">
+
+        <div class="bottom-particles d-md-none d-lg-block" id="bottomParticles"></div>
         <div class="container">
             <section class="time">
                 <div class="time-content">
@@ -1182,7 +1182,7 @@
                         <h2 class="footer-section_caption">Subscribe for<br>our newsletter</h2>
                         <form action="javascript:void(0);" class="footer-form">
                             <input type="email" class="footer-email d-block" id="inputEmail" placeholder="Enter email for news" required>
-                            <button type="submit" class="header-button circled shadow hovered scale fill d-block footer-button">Subscribe</button>
+                            <button type="submit" class="header-button circled shadow hovered scale fill d-block footer-button">Stay tuned</button>
                         </form>
                     </div>
                 </div>
@@ -1191,8 +1191,8 @@
                         <h1 class="footer-bottom_logo__text">re:factor</h1>
                     </div>
                     <div class="footer-bottom_copy">
-                        <p class="footer-bottom_copy__p">© re:factor financial group, 2018. All rights reserved<br>This website uses cookies from Google and Facebook. The information collected helps to display personalized ads to provide services and to marketing statistics. By continuing
-                            to browse the site you are agreeing to our use of cookies.</p>
+                        <p class="footer-bottom_copy__p">©re:factor financial group, 2018. All rights reserved.<br>This website uses cookies. The information acquired helps to display personalized ads and build up marketing statistics. By continuing to browse the site you agree to our
+                            terms of cookies.</p>
                     </div>
                 </div>
             </div>
@@ -1283,44 +1283,50 @@
                 <div class="close"><i class="fas fa-times"></i></div>
             </div>
         </div>
-        <!-- Bootstrap core JavaScript
+    </div>
+    <!-- Bootstrap core JavaScript
             ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <!-- CONTENT SCRIPTS: -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        <script src="lib/jquery.countdown.min.js"></script>
-        <!-- PAGE SCRIPTS: -->
-        <script src="js/follow.js"></script>
-        <script src="js/media.js"></script>
-        <script src="js/structure.js"></script>
-        <script src="js/roadmap.js"></script>
-        <script src="js/scroll.js"></script>
-        <script src="js/toggler.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/team.js"></script>
-        <script src="js/youtube.js"></script>
-        <script src="js/resize.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- CONTENT SCRIPTS: -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="lib/jquery.countdown.min.js"></script>
+    <script src="lib/jquery.particleground.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment-with-locales.min.js"></script>
+    <!-- PAGE SCRIPTS: -->
+    <script src="js/follow.js"></script>
+    <script src="js/media.js"></script>
+    <script src="js/structure.js"></script>
+    <script src="js/roadmap.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/toggler.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/youtube.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/pulsate.js"></script>
+    <script src="js/particles.js"></script>
 
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script>
-            (function() {
-                'use strict'
-                if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-                    var msViewportStyle = document.createElement('style')
-                    msViewportStyle.appendChild(
-                        document.createTextNode(
-                            '@-ms-viewport{width:auto!important}'
-                        )
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
                     )
-                    document.head.appendChild(msViewportStyle)
-                }
-            }())
-        </script>
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+        }())
+    </script>
 </body>
 
 </html>

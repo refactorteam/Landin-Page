@@ -6,7 +6,11 @@ $(document).ready(function(){
             $(this).text(result);
         });
     }
-    
-    countDown('2018/03/31', $('.topper-clock'));
+
+    (function main(){
+    	var stringDate = "2018-03-31 00:00 +3:00";
+    	var until = moment(stringDate).toDate();
+    	countDown(until, $('.topper-clock'));
+    }());
     
 });

@@ -20,25 +20,25 @@ $(document).ready(function() {
     //     });
     // }
 
-   function shrinkBackground(background) {
-       background = $(background);
-       background.css('transform', 'scale(0)');
-   }
+    function shrinkBackground(background) {
+        background = $(background);
+        background.css('transform', 'scale(0)');
+    }
 
-   function releaseBackground(background) {
-       background = $(background);
-       background.css('transform', 'scale(1)');
-   }
+    function releaseBackground(background) {
+        background = $(background);
+        background.css('transform', 'scale(1)');
+    }
 
     // backgroundMovement($('.structure'), $('#bgStructure'));
 
     $('.structure .keeper').hover(function() {
-       shrinkBackground($('#bgStructure'));
+        shrinkBackground($('#bgStructure'));
         var desc = this.getAttribute('data-desc');
         $('#' + desc).addClass('bolder');
         $('#' + desc + ' .structure-list_item__pointer').addClass('pointing');
     }, function() {
-       releaseBackground($('#bgStructure'));
+        releaseBackground($('#bgStructure'));
         var desc = this.getAttribute('data-desc');
         $('#' + desc).removeClass('bolder');
         $('#' + desc + ' .structure-list_item__pointer').removeClass('pointing');

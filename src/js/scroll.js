@@ -1,8 +1,8 @@
 $(document).ready(function() {
     var scroll = function(elem) {
         //elem - объект, который вызывает скролл, а не объект, до которого идет скролл. У elem должен быть установлен href.
-        var goto = $(elem).attr("href");
-        if (goto.length != 0) {
+        var goto = $(elem).attr('href');
+        if (goto.length !== 0) {
             $('html, body').animate({
                 scrollTop: $(goto).offset().top - 56
             }, 500);

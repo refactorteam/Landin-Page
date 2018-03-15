@@ -327,7 +327,14 @@ button {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 40px;
-  z-index: 100; }
+  z-index: 100;
+  position: relative; }
+  .topper .particle-background {
+    width: 100%;
+    height: calc(100% + 40px);
+    position: absolute;
+    top: -40px;
+    z-index: -1; }
   .topper-title {
     font-size: 60px;
     font-family: 'Gilroy Bold';
@@ -1151,6 +1158,13 @@ button {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    z-index: -1; }
+  .bottom-particles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 300px;
+    right: 0;
     z-index: -1; }
   .bottom .time {
     position: relative; }

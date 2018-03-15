@@ -6,6 +6,14 @@
 	background-position: top center;
 	padding-top: 40px;
 	z-index: 100;
+    position: relative;
+    .particle-background{
+        width: 100%;
+        height: calc(100% + 40px);
+        position: absolute;
+        top: -40px;
+        z-index: -1;
+    }
 	&-title{
 		font-size: 60px;
 		font-family: 'Gilroy Bold';

@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     function slidePartners() {
-        var slider = $('#pt1').slick({
+        $('#pt1').slick({
             slidesToScroll: 1,
             slidesToShow: 2,
             arrows: false,

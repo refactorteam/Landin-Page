@@ -9,7 +9,7 @@ $(document).ready(function() {
             $buttons.removeClass('d-none fadeOutDown');
             $buttons.addClass('d-flex fadeInUp');
         }, {
-            offset: "0px",
+            offset: '0px',
         });
         $follow.waypoint(function() {
             $header.removeClass('fixed-top');
@@ -19,7 +19,7 @@ $(document).ready(function() {
                 $buttons.addClass('d-none');            
             }, 250);
         }, {
-            offset: "1px",
+            offset: '1px',
         });
 
         $('.about').waypoint(function(){
