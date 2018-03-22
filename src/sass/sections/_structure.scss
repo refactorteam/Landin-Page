@@ -15,6 +15,7 @@
 		z-index: -2;
 	}
 	&-wrapper{
+        position: relative;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -22,6 +23,8 @@
         display: none;
     }
 	&-wheel{
+        margin-left: auto;
+        margin-right: auto;
 		width: 500px;
 		height: 500px;
 		display: flex;
@@ -114,6 +117,7 @@
 			display: block;
             margin-bottom: 30px;
 			&__text{
+//                width: 200px;
 				display: block;
 				 margin-bottom: 0;
 			}
@@ -136,8 +140,10 @@
 		}
 	}
 	&-left{
+        width: 200px;
 		.structure-list{
 			&_item{
+                margin-left: 50%;
 				position: relative;
 				&__pointer{
 					position: absolute;
@@ -170,8 +176,10 @@
 		}
 	}
 	&-right{
+        width: 200px;
 		.structure-list{
 			&_item{
+				margin-right: 50%;
 				position: relative;
 				&__pointer{
 					position: absolute;

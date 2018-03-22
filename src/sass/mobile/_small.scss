@@ -342,9 +342,12 @@
         }
         
         &-left{
+            width: 100%;
+            padding-bottom: 30px;
             .structure-list{
                 align-items: flex-end;
                 &_item{
+                    margin-left: 0;
                     &__pointer{
                         left: 50%;
                         right: auto;
@@ -376,6 +379,7 @@
             }
         }
         &-right{
+            width: 100%;
             &_bottom{
                 flex-direction: row-reverse;
             }

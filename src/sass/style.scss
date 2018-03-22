@@ -180,6 +180,11 @@ button{
     }
 }
 
+.c-button{
+	padding-left: 60px !important;
+	padding-right: 60px !important;
+}
+
 .person{
 	height: 20px;
 	width: 15px;
@@ -328,6 +333,14 @@ button{
     &.slick-disabled{
         opacity: .5;
     }
+}
+
+.sub-section{
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 60px 0 !important;
+	color: #fff;
 }
 
 @import "sections/topper.scss";

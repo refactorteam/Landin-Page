@@ -1,5 +1,6 @@
 /*  INSTALL:
         npm i gulp browser-sync gulp-sass gulp-autoprefixer gulp-html-beautify gulp-clean-css gulp-htmlmin gulp-uglify gulp-eslint eslint-config-jquery --save-dev
+        npm i gulp -g //if you want to run gulp globally
     USE:
         DEBUG:
             gulp

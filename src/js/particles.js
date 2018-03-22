@@ -7,7 +7,7 @@ $(document).ready(function() {
         minSpeedY: .1,
         maxSpeedY: .6,
         lineWidth: .5,
-        density: 13400,         // One particle every 12100 pixels
+        density: 13400,         // One particle every 13400 pixels
         curvedLines: false,
         proximity: 150,         // How close two dots need to be before they join
         parallaxMultiplier: 10, // Lower the number is more extreme parallax
@@ -19,7 +19,7 @@ $(document).ready(function() {
         For some reason, this plugin freaks out on the bottom of the page, and it is no longer maintained.
         So I did this little trick to make it calm, but now the parallax is not that very sensitive.
         This plugin isn't really that flexible so I'll stick to this for now, 
-        or maybe I change to another plugin in the future.
+        or maybe I'll change to another plugin in the future.
     */
 
     var paramsBottom =      {

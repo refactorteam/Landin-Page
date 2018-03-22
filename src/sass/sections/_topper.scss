@@ -44,7 +44,7 @@
 		}
 	}
 	&-content{
-		margin-top: 120px;
+		margin-top: 60px;
 		display: flex;
 		color: #fff;
 		&-left{
@@ -60,6 +60,7 @@
 			z-index: 100;
 			&::after{
 				position: absolute;
+				display: none;
 				content: '';
 				top: -40px;
 				left: -65px;

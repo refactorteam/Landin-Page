@@ -86,6 +86,7 @@
 			// width: 770px;
 			&-right{
 				margin-left: 100px;
+				width: calc(100% - 261.32px);
 			}
 			&:focus{
 				outline: none;

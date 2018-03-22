@@ -41,8 +41,8 @@ $(document).ready(function(){
     $('#team-slider .team-top-card').width($('#team-slider .team-members').width());
 
     $('.team-card').click(function(){
-        showSlide(this);
         $('#personModal').modal('show');
+        showSlide(this);
     });
 
     $('.close').click(function(){

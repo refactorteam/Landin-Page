@@ -1,6 +1,17 @@
 .economy{
 	padding: 60px 0;
-	background-color: #F7F9FF;
+    padding-bottom: 120px;
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #F7F9FF;
+		z-index: -1;
+	}
 	&-wrapper{
         padding-left: 150px;
         padding-right: 150px;
