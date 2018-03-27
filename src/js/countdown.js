@@ -8,7 +8,7 @@ $(document).ready(function(){
     }
 
     (function main(){
-    	var stringDate = "2018-03-31 00:00 +3:00";
+    	var stringDate = "2018-03-31T03:00:00+03:00";
     	var until = moment(stringDate).toDate();
     	countDown(until, $('.topper-clock'));
     }());
