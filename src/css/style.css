@@ -1047,7 +1047,7 @@ button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 560px !important; }
+    width: 560px; }
     .team-modal-card:focus {
       outline: none; }
   .team-modal .modal-body {
@@ -2220,29 +2220,31 @@ button {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start; }
-        .structure-right .structure-list_item__pointer {
-          left: 50%;
-          right: auto;
-          top: auto;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          top: -20px; }
-          .structure-right .structure-list_item__pointer.pointing::after {
-            background-image: url(../img/arr-down.svg);
-            bottom: 12px;
-            top: auto;
+        .structure-right .structure-list_item {
+          margin-right: 0; }
+          .structure-right .structure-list_item__pointer {
             left: 50%;
-            height: 30px;
-            width: 8px;
-            -webkit-transform: translateX(-50%) rotate(180deg);
-            transform: translateX(-50%) rotate(180deg);
-            background-size: cover;
-            background-position: center bottom; }
-        .structure-right .structure-list_item.more {
-          -webkit-transform: translateY(30px);
-          transform: translateY(30px); }
-          .structure-right .structure-list_item.more .pointing::after {
-            height: 60px; }
+            right: auto;
+            top: auto;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            top: -20px; }
+            .structure-right .structure-list_item__pointer.pointing::after {
+              background-image: url(../img/arr-down.svg);
+              bottom: 12px;
+              top: auto;
+              left: 50%;
+              height: 30px;
+              width: 8px;
+              -webkit-transform: translateX(-50%) rotate(180deg);
+              transform: translateX(-50%) rotate(180deg);
+              background-size: cover;
+              background-position: center bottom; }
+          .structure-right .structure-list_item.more {
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+            .structure-right .structure-list_item.more .pointing::after {
+              height: 60px; }
     .structure-wheel {
       width: 300px;
       height: 300px;
@@ -2307,6 +2309,43 @@ button {
       height: 182px; }
   .team-row {
     padding-bottom: 0; }
+  .team-top {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; }
+    .team-top .team-members {
+      padding-left: 51px;
+      padding-right: 51px; }
+    .team-top .arrow.arrow-left {
+      left: 0; }
+    .team-top .arrow.arrow-right {
+      right: 0; }
+    .team-top-card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .team-top-card-right {
+        margin-left: 0;
+        width: 100%; }
+      .team-top-card .team-card_ach {
+        margin-left: 0; }
+  .team-modal .modal-body {
+    padding-left: 56px;
+    padding-right: 56px; }
+  .team-modal .team-members {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .team-modal .arrow.arrow-left {
+    left: 10px; }
+  .team-modal .arrow.arrow-right {
+    right: 10px; }
   .economy-wrapper {
     padding-left: 0;
     padding-right: 0; }
@@ -2499,6 +2538,37 @@ button {
       margin-bottom: 20px; }
     .bottom .footer-bottom_copy {
       text-align: center; } }
+
+@media screen and (max-width: 374px) {
+  .topper-content-right .header-button {
+    padding-left: 75px;
+    padding-right: 75px; }
+  .about .show-mobile-right .line-right .item {
+    top: 20px; }
+  .about .show-mobile-left .line-left .item {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .about .show .customer {
+    right: 10px; }
+  .about-article {
+    padding-left: 0;
+    padding-right: 0; }
+    .about-article_text {
+      margin-right: 15px;
+      margin-left: 15px; }
+  .about .idea-show {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .structure-wrapper-m {
+    width: 290px; }
+  .structure-wheel {
+    width: 290px;
+    height: 290px; }
+  .bottom .time-content .header-button {
+    padding-left: 75px;
+    padding-right: 75px; }
+  .footer-list {
+    margin-bottom: 25px; } }
 
 .modal-dialog-centered {
   min-height: calc(100vh - 60px);

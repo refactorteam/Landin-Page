@@ -10,6 +10,7 @@ $(document).ready(function() {
         return false;
     };
     $('.header-link, .nav-link, .follow .navbar-brand').click(function(e) {
+        e.preventDefault();
         scroll(e.currentTarget);
     });
     $('#scrollTop').click(function(e){
