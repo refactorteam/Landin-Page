@@ -476,11 +476,25 @@
             }
             .min-left{
                 width: 100%;
+                &-img{
+                    width: 100%;
+                    height: 300px;
+                    margin-bottom: 30px;
+                    background-image: url(../img/min/ben.svg);
+                    display: block;
+                    background-size: contain;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
             }
             .min-right{
                 display: none;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             .min-list{
+                width: 100%;
                 text-align: left;
             }
         }
@@ -881,6 +895,13 @@
         &-wheel{
             width: 290px;
             height: 290px;
+        }
+    }
+
+    .team-modal{
+        .modal-body{
+            padding-left: 40px;
+            padding-right: 40px;
         }
     }
 

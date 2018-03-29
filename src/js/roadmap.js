@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    // Storing width as a variable
+    var width = $(window).width();
+
     function parseDate(string) {
         var dateArray = string.split('-');
         var year = parseInt(dateArray[0]);
@@ -84,6 +87,7 @@ $(document).ready(function() {
             draggable: false,
             infinite: false,
             touchMove: false,
+            asNavFor: $('.roadmap-top-slider'),
         });
     }
 
@@ -95,10 +99,16 @@ $(document).ready(function() {
     scrollNowadays();
 
     $(window).resize(function() {
-        responsiveTopSlider();
-        responsiveBottomSlider();
-        setRoadMap();
-        scrollNowadays();
+        
+        // Resize only if width has changed, but not height
+        // console.log($(this).width() + ' : ' + width);
+        if ($(this).width() != width) {
+            width = $(this).width();
+            responsiveTopSlider();
+            responsiveBottomSlider();
+            setRoadMap();
+            scrollNowadays();
+        }
     });
 
 });

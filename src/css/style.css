@@ -2292,9 +2292,22 @@ button {
       flex-direction: column-reverse; }
     .mvp .benefits .min-left {
       width: 100%; }
+      .mvp .benefits .min-left-img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+        background-image: url(../img/min/ben.svg);
+        display: block;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat; }
     .mvp .benefits .min-right {
-      display: none; }
+      display: none;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px; }
     .mvp .benefits .min-list {
+      width: 100%;
       text-align: left; }
   .team-wrapper {
     display: -webkit-box;
@@ -2564,6 +2577,9 @@ button {
   .structure-wheel {
     width: 290px;
     height: 290px; }
+  .team-modal .modal-body {
+    padding-left: 40px;
+    padding-right: 40px; }
   .bottom .time-content .header-button {
     padding-left: 75px;
     padding-right: 75px; }
