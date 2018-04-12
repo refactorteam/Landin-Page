@@ -282,7 +282,7 @@ button {
 
 .arrow {
   background-color: white;
-  z-index: 100;
+  z-index: 50;
   position: absolute;
   width: 41px;
   height: 41px;
@@ -455,7 +455,7 @@ button {
     width: 100%;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 999;
     padding: 20px 35px;
     background-color: #fff;
     -webkit-transition: -webkit-transform .125s ease-out;
@@ -760,7 +760,7 @@ button {
       -webkit-transform: translateY(100vh);
       transform: translateY(100vh); }
     .about .show-card {
-      z-index: 100; }
+      z-index: 90; }
       .about .show-card-bg {
         width: 264px;
         height: 264px;
@@ -1554,7 +1554,7 @@ button {
     position: relative; }
   .roadmap .arrow {
     background-color: white;
-    z-index: 100;
+    z-index: 50;
     position: absolute;
     width: 41px;
     height: 41px;
@@ -1808,7 +1808,7 @@ button {
     -ms-flex-item-align: center;
     align-self: center;
     position: relative;
-    z-index: 100;
+    z-index: 50;
     padding: 100px; }
     .economy-diagram::before {
       content: '';
